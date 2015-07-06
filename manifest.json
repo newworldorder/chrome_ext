@@ -1,0 +1,19 @@
+{
+"name": "Username Helper",
+"version": "0.1",
+"content_scripts":[
+{
+  "matches":["http://*/*", "https://*/*"],
+  "js": ["pageChecker.js"]
+}
+],
+"background":{
+	"scripts":["background.js"],
+	"persistent": false
+},
+"browser_action":{
+	"default_title": "Username Helper"
+},
+"manifest_version":2
+
+}
